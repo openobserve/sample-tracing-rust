@@ -4,14 +4,19 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-opentelemetry = "0.24.0"
-opentelemetry-otlp = "0.17.0"
-opentelemetry-semantic-conventions = "0.16.0"
-opentelemetry-stdout = "0.5.0"
-opentelemetry_sdk = { version = "0.24.1", features = ["rt-tokio"] }
-tokio = { version = "1.39.2", features = ["full"] }
+opentelemetry = "0.27.1"
+opentelemetry-otlp = "0.27.0"
+opentelemetry-semantic-conventions = { version = "0.27.0", features = [
+  "semconv_experimental",
+] }
+opentelemetry-stdout = "0.27.0"
+opentelemetry_sdk = { version = "0.27.1", features = [
+  "rt-tokio",
+  "spec_unstable_metrics_views",
+] }
+tokio = { version = "1.42.0", features = ["full"] }
 tonic = "0.12.1"
-tracing = "0.1.40"
-tracing-core = "0.1.32"
-tracing-opentelemetry = "0.25.0"
-tracing-subscriber = { version = "0.3.18" }
+tracing = "0.1.41"
+tracing-core = "0.1.33"
+tracing-opentelemetry = "0.28.0"
+tracing-subscriber = { version = "0.3.19" }
