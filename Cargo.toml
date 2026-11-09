@@ -10,7 +10,7 @@ opentelemetry-semantic-conventions = { version = "0.27.0", features = [
   "semconv_experimental",
 ] }
 opentelemetry-stdout = "0.27.0"
-opentelemetry_sdk = { version = "0.27.1", features = [
+opentelemetry_sdk = { version = "0.32.1", features = [
   "rt-tokio",
   "spec_unstable_metrics_views",
 ] }
